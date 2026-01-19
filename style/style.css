@@ -1,3 +1,14 @@
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+ 
+}
+
+
+
+
 /* navbar style */
 
 .navbar{
@@ -51,9 +62,12 @@
 .Subscribe-btn{
     display: flex;
     justify-content: center;
+    gap: 5px;
     align-items: center;
      background:linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
 color: #FFFFFF;
+font-size: 16px;
+font-weight: 600;
 padding: 12px 16px ;
 border-radius: 20px;
   border: none;
@@ -64,11 +78,17 @@ border-radius: 20px;
 
 .hero{
     position: relative;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
 }
 /* parent img */
 .hero img{
     max-width: 100%;
     height: auto;
+    
+    display: block;
+    
 }
  /* child img */
 
@@ -84,11 +104,11 @@ border-radius: 20px;
 }
 .microphone {
      position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 54%;
+    transform: translateX(-54%);
     top: 17%;
     /* max-height: auto; */
-    width: clamp(90px 12vw 160px);
+    width: clamp(90px, 12vw, 160px);
 
 }
 
@@ -105,12 +125,200 @@ border-radius: 20px;
     padding: 4px 9px;
 }
 
+.text-box{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
 .font{
     color: rgba(255, 255, 255, 1);
     font-style: Extra Bold;
     font-size: 60px;
     font-weight: 800;
+    margin-bottom: 2px;
+    
 }
+
+.similar{
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+font-weight: 400;
+}
+
+
+
+
+.container{
+    display: flex;
+    gap: 10px;
+}
+.spotify-btn{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+     background:linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+color: #FFFFFF;
+font-size: 16px;
+font-weight: 600;
+padding: 12px 16px ;
+border-radius: 20px;
+  border: none;
+}
+
+.green-btn{
+    color: rgba(0, 255, 136, 1);
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    border: 1px solid rgba(0, 255, 136, 1);
+    border-radius: 10000px;
+     background-color: rgba(26, 11, 46, 1);
+}
+
+/* About section */
+
+.background{
+    background-color: rgba(26, 11, 46, 1); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+   margin-bottom: 0 ;
+    padding-bottom: 0;
+   
+}
+
+.large{
+    color:  rgba(255, 255, 255, 1);
+    font-style: Bold;
+font-size: 48px;
+font-weight: 700;
+margin-bottom: 5px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    padding: 40px 20px;
+   text-align: center;
+}
+
+/* .god-parent{
+    padding: 120px 200px;
+} */
+.boss{
+    background-color: #1A0B2E;
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 0; 
+    padding: 0 120px 30px 120px;
+    
+    overflow: hidden;
+}
+
+.digit{
+    color: rgba(0, 255, 136, 1);
+    font-style: Black;
+font-size: 48px;
+font-weight: 900;
+margin-bottom: 0;
+
+}
+
+.card{
+    
+    display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 2px;
+}
+/* box section */
+
+.box-set{
+    background-color: rgba(35, 14, 61, 1);
+}
+.box-set>*{
+background-color:rgba(53, 17, 101, 0.4) ;
+border-radius:40px ;
+padding: 40px;
+}
+
+
+.box-set span{
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    font-style: Bold;
+    font-size: 48px;
+    font-weight: 700;
+    padding: 13px;
+}
+
+.top{
+  color: rgba(255, 255, 255, 1);
+  font-style: Bold;
+font-size: 24px;
+font-weight: 700;
+text-align: left;
+}
+
+.box-set span{
+    grid-area: span;
+    background-color: rgba(35, 14, 61, 1);
+   
+}
+.box-1{
+    grid-area:box-1 ;
+}
+
+.box-2{
+    grid-area:box-2 ;
+}
+
+.box-3{
+    grid-area:box-3 ;
+}
+
+.box-4{
+    grid-area:box-4 ;
+}
+
+.box-5{
+    grid-area:box-5 ;
+}
+
+.box-set{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "span  span  span "
+    "box-1 box-2 box-2"
+    "box-1 box-3 box-3"
+    "box-4 box-4 box-5"
+
+    
+    ;
+}
+
+
 
 
 @media screen and (max-width:576px) {
@@ -143,7 +351,73 @@ border-radius: 20px;
         padding: 1px 2px;
         border-radius: 800px;
     }
+    
+    .text-box{
+        top: 60%;
+        width: 100%;
+       box-sizing: border-box;
+        text-align: center;
+    }
+    .font{
+       margin-top: 20px;
+        font-size: 10px;
 
+    }
+    .similar{
+       font-size: 10px; 
+       margin: 8px 0;
+    }
+    .container{
+       display:flex;
+        gap: 8px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+       
+        
+    }
+.container button{
+        font-size: 6px;
+        padding: 1px 3px;
+        border-radius: 999px;
+    }
+
+    .spotify-btn{
+         display: flex;
+        margin-top: 2px;
+    }
+
+    .spotify-btn img{
+        width: 9px;
+        height: 9px;
+        margin-top: 1.5px;
+    }
+
+    .green-btn{
+        display: flex;
+        margin-top: 4px;
+        padding: 2px 4px;
+    }
+
+    .green-btn img{
+        width: 7px;
+        height: 7px;
+       
+    }
+
+.large{
+   font-size: 18px;
+font-weight: 300; 
 }
 
+.boss{
+display: grid;
+justify-content: space-between;
+gap: 50px;
+padding: 0 10px 10px 30px;
+grid-template-columns: repeat(2,1fr);
+}
 
+    
+
+    }
+    
