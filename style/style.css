@@ -8,6 +8,16 @@
     background-color: rgba(26, 11, 46, 1);
     
 }
+.phone img{
+    display: none;
+}
+
+.phone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
 .first{
     font-size: 26px;
     font-weight: 600;
@@ -38,7 +48,7 @@
    
 }
 
-.navbar button{
+.Subscribe-btn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,35 +61,89 @@ border-radius: 20px;
 }
 
 /* hero style */
+
+.hero{
+    position: relative;
+}
+/* parent img */
 .hero img{
     max-width: 100%;
+    height: auto;
 }
+ /* child img */
 
-.circle img{
-    position: relative;
-    left: 36%;
-    top: -550px;
-    height: 350px;
-    width: 350px;
+.circle{
+    position: absolute;
+    left:50% ;
+    transform: translateX(-50%);
+    top: 7%;
+    /* height:10em; */
+    width: clamp(120px, 30vw, 320px);
+    /* max-width: 100%;
+    max-height: auto; */
 }
-.microphone img{
-     position: relative;
-    left: 43.2%;
-    top: -817px;
-    height: 160px;
-    width: 160px;
+.microphone {
+     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 17%;
+    /* max-height: auto; */
+    width: clamp(90px 12vw 160px);
 
 }
 
 .btn {
     background: #00FF88;
     color: #1A0B2E;
-    position: relative;
-    left: 57%;
-    top: -1050px;
+    position: absolute;
+    left: 55%;
+    top: 8%;
     border: none;
     border-radius: 1000px;
-    font-size: 18px;
+    font-size:15px ;
     font-weight: 400;
-    padding: 8px 16px;
+    padding: 4px 9px;
 }
+
+.font{
+    color: rgba(255, 255, 255, 1);
+    font-style: Extra Bold;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+
+@media screen and (max-width:576px) {
+.phone img{
+    display: block;
+}
+.navbar{
+    padding: 16px 20px;
+}
+.list,
+.Subscribe-btn{
+    display: none;
+}
+.phone{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(26, 11, 46, 1);
+}
+
+
+    .microphone{
+        width: 70px;
+        top: 17%;
+    }
+    .btn{
+        width: 35px;
+        font-size: 11px;
+        top:8% ;
+        padding: 1px 2px;
+        border-radius: 800px;
+    }
+
+}
+
+
