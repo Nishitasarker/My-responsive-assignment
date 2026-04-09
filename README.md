@@ -8,7 +8,7 @@ A clean, modern, and fully responsive multi-page web application designed to dem
 
 * **Live Deployment:** [View Live Site](https://nishitasarker.github.io/My-responsive-assignment/)
 * **Repository:** [GitHub Source Code](https://github.com/nishitasarker/My-responsive-assignment)
-* **Developer Profile:** [LinkedIn](https://linkedin.com/in/nishitasarker)
+* **Developer Profile:** [LinkedIn](https://linkedin.com/in/nishitasarker2005)
 
 ---
 
