@@ -39,7 +39,7 @@ To maintain a professional codebase, the following principles were applied:
 
 ## 📸 Screenshot
 ![WhatsApp Image 2026-04-09 at 17 04 17](https://github.com/user-attachments/assets/9af2ac0b-9e31-4cf8-9f2e-7fed6b72d680)
-Responsive
+
 ![WhatsApp Image 2026-04-09 at 17 46 24](https://github.com/user-attachments/assets/bd7c7bd4-287a-4a8c-9824-600384d52a08)
 
 
@@ -50,11 +50,13 @@ For developers looking to extend this project, follow these steps:
 1. **Clone the repo:**
    ```bash
    git clone [https://github.com/nishitasarker/My-responsive-assignment.git](https://github.com/nishitasarker/My-responsive-assignment.git)
-Open the environment:
+2.Open the environment:
 We recommend using VS Code with the Live Server extension.
 
-Configuration:
+
+3.Configuration:
 Global styles (colors, spacing) can be modified in the root of the CSS file via variables:
+
 
 CSS
 :root {
@@ -72,8 +74,6 @@ Contribution Workflow
 
 👤 Author
 Nishita Sarker
-
-Portfolio: GitHub Profile
 
 Professional Networking: LinkedIn
 
